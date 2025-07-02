@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS db_web;
+USE db_web;
+
+CREATE TABLE IF NOT EXISTS gambar (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    filename VARCHAR(255) NOT NULL,
+    filepath VARCHAR(255) NOT NULL,
+    thumbpath VARCHAR(255) NOT NULL,
+    width INT,
+    height INT,
+    uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
